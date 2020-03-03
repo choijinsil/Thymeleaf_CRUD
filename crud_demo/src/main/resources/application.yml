@@ -1,0 +1,15 @@
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML5
+    cache: false
+    template-resolver-order: 0
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+# 실서버 배포시에는  개발서버와 실 서버용으로 설정을 분리시켜야 한다.탬플릿을 캐시하지 않으면 서버가 터진다.
+    
