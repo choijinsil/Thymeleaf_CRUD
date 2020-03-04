@@ -20,3 +20,10 @@ th: 가 타임리프의 약자이다.
   
 자동완성
 http://www.thymeleaf.org/eclipse-plugin-update-site/
+
+Variable Expressions: ${...}
+Selection Variable Expressions: *{...}
+Message Expressions: #{...}
+Link URL Expressions: @{...}
+Fragment Expressions: ~{...}
+
