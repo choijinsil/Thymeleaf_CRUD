@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.siri.crud.model.User;
 import com.siri.crud.repository.UserRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class UserController {
 
 	private final UserRepository userRepository;
-
-	public UserController(UserRepository userRepository) {
-		this.userRepository = userRepository;
-	}
 
 	@GetMapping("/signup")
 	public String showSignUpForm(User user) {
